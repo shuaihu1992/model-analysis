@@ -183,3 +183,5 @@ class Input(object):
         self.epoch_size = ((len(data) // batch_size) - 1) // num_steps
         # input_data 是输入，targets 是期望的输出
         self.input_data, self.targets = generate_batches(data, batch_size, num_steps)
+if __name__ == '__main__':
+    load_data(data_path)
