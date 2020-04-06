@@ -92,7 +92,7 @@ def train(train_data, vocab_size, num_layers, num_epochs, batch_size, model_save
 
         # 关闭线程
         coord.request_stop()
-        coord.join(threads)
+        coord.join(threads) #多线程同时结束运行
 
 
 if __name__ == "__main__":
